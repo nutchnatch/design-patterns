@@ -1,0 +1,2 @@
+Given interface you want from interface you have.
+Adapter adapts ab existing interface X to conform to the required interface Y.

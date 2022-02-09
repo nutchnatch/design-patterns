@@ -1,0 +1,16 @@
+Avoid redundancy when storing data.
+Ex:
+ - In a computer online game, we may find a lot of users with identical first/last names,
+ so, there is no sense to store the first/last names over and over again
+ Solution - save those names somewhere else and add pointers to those names
+
+ - bold italic text in the console, we want to format individual characters, we don't want to add additional information
+ per character
+ Solution - operate on ranges (e.g line number, start/end position)
+
+ This pattern is used to space optimization technique that let us use less memory by storing externally data associated
+ with similar objects.
+
+ -> Store common data externally
+    Specify an index or a reference into the external data store
+    Define the idea if ranges on a homogeneous collections and store data related to those ranges.

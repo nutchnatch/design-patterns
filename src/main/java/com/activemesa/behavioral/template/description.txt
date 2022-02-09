@@ -1,0 +1,14 @@
+- it's all about providing once again high level blueprints of an algorithm to be completed by its inheritors.
+- algorithms generally can be decomposed into the common parts or the high level parts as well as the specifics and the
+Strategy pattern;
+- Strategy pattern does this through composition:
+    * So essentially you have the high level algorithm which uses some interface and then the concrete implementations
+actually implement this interface and then you stick them in.
+- And it works - the template method is very similar except it does this through inheritance instead.
+  So the overall algorithm would typically be an abstract base class and then of course what you have is you have
+  inheritors of this anger which overrides certain key abstract members but the base class actually keeps the template
+  for the actual algorithms
+
+  Definition:
+  - allows us to define the skeleton of the algorithm in the base class with concrete implementations defined in these
+  subclasses.

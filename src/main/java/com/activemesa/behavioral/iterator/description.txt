@@ -1,0 +1,8 @@
+Describes how traversal of data structure happens and who makes it happen.
+ - Keeps the reference of the current element;
+ - Knows how to move to a different element
+
+ Java has Iterator<T> and Iterable<T>
+  - Iterator<T> specifies the iterator API
+  - A class needs to be Iterable in order to support foo (Foo foo : bar) loops
+  - Iterator cannot be recursive (no coroutines) - cannot suspend iteration

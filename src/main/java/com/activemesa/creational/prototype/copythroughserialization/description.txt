@@ -1,0 +1,2 @@
+Copy through serialization is used when we have complex classes and it is not a good idea to copy all and every single
+part of this object in order to do a deep copy.

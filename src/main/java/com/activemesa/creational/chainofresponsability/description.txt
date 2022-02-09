@@ -1,0 +1,26 @@
+1-Imagine a situation of an unethical behavior of an employee; who takes the blame?
+    - Employee
+    - Manager
+    - CEO
+
+2-We click a graphical element on a form:
+    - Button handles it
+    - Underlying group box
+    - Underlying window
+3-CCG computer game
+    - Creature has attack and defense values
+    - Those can be boosted by other cards
+
+Definition:
+A chain of components who all get a chance to process a command or query, optionally having default processing implementation
+and an ability to terminate the processing chain.
+
+
+## Command Query Separation
+   - Command = asking for an action or change (e.g, please set your attack value to 2)
+   - Query = asking for information (e.g, please give me your attack value)
+   - CQS = having separate means of sending commands and queries to e.g,
+
+   Instead of directly accessing a field of a particular class. In this case, we send it a message through a command.
+   With the chain of responsibility, we can have other listeners to this this command being sent and they can override
+   the behavior of the command or the query.

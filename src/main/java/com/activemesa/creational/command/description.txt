@@ -1,0 +1,15 @@
+Ordinary Java statements are perishable
+    - meaning that cannot undo a field assignment
+    - cannot directly serialize a sequence of actions (calls)
+
+What we really want is an object that represents an operation
+
+It is very used on:
+    - GUI commands
+    - multi-level undo/redo
+    - macro recording
+
+
+Concept:
+- It is an object or a group of objects that represents an instruction that performs a particular action. It contains
+all information necessary for the action to be performed.

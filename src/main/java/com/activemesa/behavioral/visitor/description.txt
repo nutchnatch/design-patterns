@@ -1,0 +1,28 @@
+- Well essentially visiter allows us to give extra behaviors not just to individual classes like you would
+  if you were building just an ordinary decorator but the idea is to add extra behaviors to an entire hierarchy of classes.
+
+- So you take a base class with all of its descendants and their descendants and you want to give them some new capability.
+
+- So for example let's suppose you have a document model so you have this idea of paragraphs and bulleted lists and
+numbered lists and all the rest of it. And now all of a sudden you have this document model and this document model is
+kind of fixed and now you want the model to be principle and furthermore you want to principal into different formats
+like a DML or markdown or something else.
+- Now what you really don't want to do is you don't want to go into every single
+element of the hierarchy and tell this element how to render itself for example you don't want to do this because this breaks
+the open closed principle so we really want to avoid this kind of thing.
+
+- What we do though is we want some sort of external component which actually knows how to correctly traverse and print
+the entire hierarchy.
+
+- And as a result we need access to the sort of non-common aspects of classes in the hierarchy
+
+- we want to avoid type checks we want to avoid any kind of casting or any kind of instance off or comparing the class
+values and so on.
+
+- this is precisely the kind of functionality that the visitor pattern provides and this is what we're going to build
+so we're going to see several different examples of the visitor.
+
+description:
+- visitor pattern is all about having a component which is called The Visitor which is allowed to traverse the entire
+inheritance hierarchy and sort of add functionality to each member of that inheritance hierarchy and it's typically
+implemented by propagating a single method (visit()) throughout the entire hierarchy.

@@ -1,0 +1,7 @@
+Prevents a "Cartesion product" complexity explosion
+A mechanism that decouples an interface or abstraction (hierarchy) from an implementation (hierarchy)
+It can be though about like a stronger form of encapsulation
+
+Example:
+shape -> circle, square
+//Rendering -> vector, raster

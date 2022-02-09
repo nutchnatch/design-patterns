@@ -1,0 +1,11 @@
+Facilitates communication between components by letting them be aware of their presence or absence on the system.
+
+For example in a chatroom:
+ - components may go in or out of the system any time (e.g, people in a chat room, or players in game)
+ - Makes the sence of them to have direct references to one another (those references may go dead)
+ - Solution: have them all refer to some central component that facilitates communication
+
+Mediator is a singleton, because we don't need more than one instance to it.
+Mediator engages in bidirectional communication with its connected components.
+Mediator has function that components can call, for example can we please broadcast a message.
+Event processing (e.g Rx) makes communication easier to implement.

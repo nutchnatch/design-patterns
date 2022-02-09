@@ -1,0 +1,8 @@
+Prototype pattern is all about object copying.
+Motivation:
+    - Copy structure from existing object, prototypes instead of creating it from scratch
+    - Do a deep copy with all the reference objects
+    - Cloning must be convenient, cannot affect the original object
+
+Cloneable is not recommended to deeply copy an object, because clone method does not specify what it does. For deep copy,
+other mechanism can be taken into consideration.

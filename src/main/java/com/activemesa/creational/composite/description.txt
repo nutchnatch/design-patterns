@@ -1,0 +1,14 @@
+Allows us to treat individuals or scalers components as well as aggregate objects, or collections of components. So both
+of them can be treated in the same fashion.
+Why do we want this?
+
+Objects can use other object's methods and fields through two different mechanism:
+- inheritance
+- composition (objects contain other objects)
+
+Ex: a mathematical expression composed of simple expressions; or
+    a shape group made of several different shapes, all grouped together so when you drag them or resize them, you don't
+    just resize one shape, but a grouping od shapes.
+
+Composite design pattern allows us to treat both single and composite objects uniformly.
+Usually, it is used to objects with needing similar/identical behavior

@@ -1,0 +1,3 @@
+In the Method chain we can find some limitations:
+- why we have to explicitly apply all the modifiers?
+- Why is it not possible to just track the presence of an object in a system and apply the modifier only when it is there

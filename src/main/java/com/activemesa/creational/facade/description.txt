@@ -1,0 +1,14 @@
+Expose several components through a single interface.
+
+Example:
+ - A house is a system that balance complexity, presentation and usability.
+   Typical home has many subsystemm:
+   - electrical, sanitation
+   - complex internal structure (floors, layers)
+   - End user is not exposed to internals
+
+ - The same happens with software
+   Many systems working to provide flexibility
+   But API consumers want it just to work
+
+Facade pattern aims to provide a simple, easy to understand/user interface over a large and sophisticated body of code.

@@ -1,0 +1,14 @@
+Keep a memento of an object's state to return to that state.
+
+Motivation.
+ - An object or a system goes through a set of changes (e.g, a bank account gets deposits and withdrawals
+ - There are different ways to navigate through those changes
+    - One approach is to record every change (Command) and teach a command to undo itself
+    - Another approach is to save snapshots of the system and then allows user to go back to a particular snapshot
+
+Description:
+ - A token/handle representing the system state. Lets us rollback to the state when the token was generated. May or
+ may not directly expose state information.
+ - It typically does not have functions of its own
+ - It is not required to expose the state to each it reverts to
+ - Can be used to redo undo

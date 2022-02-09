@@ -1,0 +1,12 @@
+This idea can be expressed like:
+- Textual input needs to be processed, e.g turned into OOP structures
+- examples:
+  Programming language compilers, interpreters and IDE
+  XML, HTML and similar
+  Numeric expressions (3+4/5
+  Regular Expressions
+
+Turning string into OOP based structures is a complicated process and this is why design pattern exist
+
+Interpreter: A component that  processes structured text data. Does so, by turning it into separate lexical tokens (lexing)
+and then interpret sequences of said tokens (parsing)

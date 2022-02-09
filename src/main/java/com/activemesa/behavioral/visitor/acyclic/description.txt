@@ -1,0 +1,8 @@
+Classic visitor has the disadvantage of tightly coupling of Expression and Expression visitor, so this represents a
+cyclic dependency
+Every time we have a new Expression, we have to create a new accept and a new visit, which represents a cyclic dependency.
+
+If we want more flexibility, we can implement the acyclic visitor pattern proposed by Robert C Martin:
+ - instead of creating a hierarchy of visitors (ExpressionVisitor) and expect visitation for avery kind os elements in
+ the hierarchy, we do an interface segregation - we create a marker interface, does not have any members at all.
+ - good to mention that this flexibility is achieved at cost of performance

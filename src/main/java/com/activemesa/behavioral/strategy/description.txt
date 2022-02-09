@@ -1,0 +1,19 @@
+- So many algorithms can actually be decomposed into what I would call the higher and lower level parts.
+    ex: * So the process of making tea can be decomposed into something higher level like the process of making a hot beverage.
+        * I mean it doesn't matter whether you're making tea or coffee or any other hot drink you have to boil
+        the water and you have to pour the water into the cup so that is the high level part.
+        * And then you have the two specific things.
+          So after you have done the high level stuff what you can do is you can take a tea bag put it into the
+          water you can add milk if you're British or you can add lemon or something like that.
+- So the specific things are to be specific but everything else can be reused for making something else
+  like coffee or hot chocolate for example
+
+Description:
+ - So strategy design pattern essentially enables the exact behavior of a system to be selected either or run time.
+ The dynamic strategy or at compile time and that would be the static strategy.
+
+
+Summary:
+- First of all define your algorithm at a reasonably high level and then you define the interface that
+  you expect each of the strategies to follow and then you provide for either dynamic or static composition
+  of strategies in the overall algorithm.

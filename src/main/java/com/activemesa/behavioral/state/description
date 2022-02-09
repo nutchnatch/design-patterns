@@ -1,0 +1,29 @@
+Motivation:
+- Consider an ordinary telephone
+- What you do with it depends  on the state of the phone/line
+    * If it is ringing, you want to make a call, you can pick it up
+    * Phone must be off the hook to talk/make a call
+    * If you try calling someone, and it is busy, you put the handset down
+- Changes in state can be explicit or in response to event (Observer pattern)
+
+
+Now changes in the state of the system so in our case that would be the phone changes in the state can
+be explicit so we can actually sort of specify Oh by the way we're doing this change or these changes an be in response
+to any event that's the go Observer pattern.
+
+So it's really up to you how your state machine operator or some state machines would have explicit control.
+So for example you query the user what they want to do and thereby they transition from one state to another and other
+systems would run state machines based on events happening externally.
+
+State Pattern:
+- A pattern in which the object's behavior is determined by its state. An object transitions from one state to another
+(sometimes need to trigger a transition)
+A formalized construct which manages states and transitions is called a state machine.
+
+Summary:
+ - Given Sufficient complexity, it pays to formally define possible states and events/triggers;
+ - Can define:
+    - state entry
+    - action when a particular event causes a transition
+    - guard conditions enabling/disabling a transition
+    - default action when no transitions are found for an event

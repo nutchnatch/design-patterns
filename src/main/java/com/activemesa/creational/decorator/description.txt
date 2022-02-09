@@ -1,0 +1,12 @@
+Used when we want augmented or additional functionalities on existing classes.
+But we don't want to change those classes or rewrite them, since it would break the open close principal (OCP),
+and we want to keep new functionalities entirely separated (SRP - single responsibility principal)
+Anyway, we want the new construct to interact with existing class.
+So, we want a decorated object to be compatible with an API that use the old object.
+
+To choices to solve this:
+- IF the class isn't final then we can just inherit from the class, then we can build on top of that, but some class are
+final, as String
+- Build a decorator which references the decorated object.
+
+Decorator pattern facilitates the addition of behaviors to individual objects without inheriting from them.

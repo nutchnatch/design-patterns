@@ -1,0 +1,18 @@
+A proxy is an interface to access a resource.
+Examples.
+- Imagine we are calling foo.bar()
+  This assumes that foo is in the same process than bar()
+  What if we want to put foo in a separate process in the same machine or a remote one
+  - in this case, how can we avoid changing the code?
+  Answer is Proxy interface:
+    * It gives the same interface, but an entirely different behavior
+    * This is called a communication problem
+        - Other types of proxies: logging, virtual, guarding
+
+Proxy is a class that functions as an interface to a particular resource. That resource may be remote , expensive
+
+It differs from Decorator pattern because it implements the same interface with different rules, while Decorator
+interface add new functionalities to the interface.
+A Decorator aggregates (or has reference to) what it is decorating; proxy does not have to, instead it can be a brand new
+ object
+Proxy might not even be working with a materialized object.
